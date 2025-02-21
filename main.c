@@ -1,23 +1,16 @@
 #include <stdio.h>
-
+#include "functions.h"
 
 int main()
 {
+    float body_temp = 37.5;
+    float scales_meet = -40.0;
+    float boiling = 100.0;
+
+    printf("%.1f\n", celsius_to_fahrenheit(body_temp));
+    printf("%.1f\n", celsius_to_fahrenheit(scales_meet));
+    printf("%.1f", celsius_to_fahrenheit(boiling));
     
-    /* -- Solution from here -- */
-
-    char name[20];
-    int age;
-
-    //printf("What is your name?");
-    scanf("%s", name); // Read a string (without spaces)
-    printf("%s\n", name);
-    //printf("How old are you?");
-    scanf("%d", &age);   // Read an integer
-    printf("%d", age);
-
-    /* -- Solution to here -- */
-    // Your code goes here
 
     return 0;
 }
